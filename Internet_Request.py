@@ -7,8 +7,6 @@ def get_price():
 
     split_html = site_html.split(';')
 
-    #print(split_html)
-
     for part in split_html:
         if 'EM.productFullPrice' in part:
             price = part.split()[2]
